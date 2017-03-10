@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Fyre and Ruination</string>
+    <string name="title_activity_splash_menu">SplashMenu</string>
+    <string name="mainMenuTitle">FYRE AND RUIN</string>
+    <string name="mainMenu_newGame">NEW GAME</string>
+    <string name="mainMenu_continueGame">CONTINUE GAME</string>
+    <string name="mainMenu_LoadGame">LOAD GAME</string>
+    <string name="nextBtn">NEXT</string>
+    <string name="continueBtn">CONTINUE</string>
+    <string name="confirmBtn">CONFIRM</string>
+    <string name="characterCreationText">CHARACTER CREATION</string>
+    <string name="chooseYourClass">CHOOSE YOUR CLASS</string>
+    <string name="chooseYourRace">CHOOSE YOUR RACE</string>
+    <string name="chooseYourSex">CHOOSE YOUR SEX</string>
+    <string name="chooseAname">PICK A NAME\nFOR YOUR ADVENTURER</string>
+    <string name="showClassDescription">CLASS DESCRIPTION</string>
+    <string name="showRaceDescription">RACE DESCRIPTION</string>
+    <string name="chooseSex">CHOOSE A SEX</string>
+    <string name="adventureAttributes">ADVENTURER\'S ATTRIBUTES</string>
+    <string name="strengthText">STRENGTH</string>
+    <string name="agilityText">AGILITY</string>
+    <string name="dexterityText">DEXTERITY</string>
+    <string name="wisdomText">WISDOM</string>
+    <string name="charismaText">CHARISMA</string>
+    <string name="constitutionText">CONSTITUTION</string>
+    <string name="maxAttrReached">Maximum Attribute Level is 10!</string>
+    <string name="attributeDescriptionTitle"><u>   Attribute Description   </u></string>
+    <string name="attributeDescriptionText">Tap on the attribute above to view the description</string>
+
+    <string-array name="classes">
+        <item>MELEE : WARRIOR</item>
+        <item>MELEE : BESERKER</item>
+        <item>MELEE : PALADIN</item>
+        <item>MAGIC : SPELL-CASTER</item>
+        <item>MAGIC : ORACLE</item>
+        <item>MAGIC : ENCHANTER</item>
+        <item>RANGER : ASSASSIN</item>
+        <item>RANGER : ARCHER</item>
+        <item>RANGER : BALLISTA</item>
+    </string-array>
+
+    <string-array name="races">
+        <item>HUMANS</item>
+        <item>ELVES</item>
+        <item>FAE</item>
+        <item>DWARF</item>
+        <item>DEMON</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>MALE</item>
+        <item>FEMALE</item>
+    </string-array>
+
+    <string name="warriorDescription">The Warrior is a melee class that focuses on a balance between offense and defence. A good warrior knows when to strike and when to falter. The warriors have a unique skill which allows them to add to their defences when they are at their weight limit, allowing you to keep your treasures on the long journey back.</string>
+    <string name="beserkerDescription">The Berserkers do not work on logic, and neither are they known for their reasoning. But if there is one thing that is known throughout the lands, are that they will fight with a drunken stupor. Their unique ability lets you increase your strength modifier significantly for one encounter when under the influence of Ale, beer or spirits.</string>
+    <string name="paladinDescription">Loyal to his compatriots, Worthy of his faith, the Paladin needs no introduction. Boasting might and justice, the Paladin keeps the forces of darkness at bay while helping those in need. The Paladin can call upon his god to smite those from dark origins ridding them of their hideous form once and for all.</string>
+    <string name="spellcasterDesciption">There are countless spellcaster throughout the region of Dwendil, and they are often thought to be individuals who enjoy the company of a book rather than another living being. Well versed in spells they are, and there are some who can wield spells with such skill, that they can wield not one but 2 spell thoughts during any instance.</string>
+    <string name="oracleDescription">Oracles are often thought to be hoaxes, often times they are viewed as the useless scums of society for tricking the weak and providing useless knowledge. However, for every fake shaman or oracle, there will always be those with the ability to foresee and foretell. The Oracle can weave magic and they have the unique ability to alter their enemies fates in small ways, often to their disadvantage.</string>
+    <string name="enchanterDescription">Enchanters are rarely sought, due to the prices they demand for when their services are required, nevertheless they are found abroad and around, often opening up merchant facilities whereby they provide weapons and armours like none other. There are also a few adventurers who are enchanters themselves, often striving to find lost treasures to imbue and transmute. Their unique ability is to temporarily enhance the effectiveness of their weapons or decrease their opponents during the heat of battle.</string>
+    <string name="summonerDescription">Summoners are an ancient career, whereby certain individuals conjure spirits and familiars to do their bidding. While in the common era of Dwendil, their services are no longer as they once were as much of the knowledge is lost or destroyed during the Strife. Nevertheless, there are a few who meddle in the arts and attempt to bring back the glory of the summoners. The Summoners unique feat is to be able to summon a familiar or companion who grows with you in battle.</string>
+    <string name="assassinDescription">In every city, their name is heard. Each sunset is met with a new death. They are the scourge of the night and feared during the day. Which friend will stab you next? Which day would be your last? This is one of the thoughts those on their list will find out. The Assasins prefer darkness to deliver their deed, and they can be increasingly more effective depending on the dimness of light.</string>
+    <string name="archerDesciption">The archer class prefer to stay away from battle often picking off their enemies from afar. The elves were thought of to be the best archers in the land, rivaled only by the fae. Archers can get into the heat of battle and create a decisive blow to the enemy at an impossible distance.</string>
+    <string name="ballistaDescription">Before the disappearance of the dwarves, they were known for their extreme engineering and mastery of gunpowder. The Ballista was first seen in armies trying to break down ramparts or castle walls. Nowadays, they are mostly seen in big bandit encampments blasting away carriages. The Ballista is a dwarf only class, and they have the ability to change the landscape wherever they battle.</string>
+
+    <string name="humanDescription">One of the few short span races whose lives merely touches the edge of a century. Fueled by base desires and always adapting, humans are a race of pioneering and expansion. They are known for their contradictions whereby some can be kindly while others brutal. Some seek war while others seek peace. Many races often find that it takes experience to deal with humans.</string>
+    <string name="elvesDescription">One of the oldest races that ever existed, some say they saw the First Light while others believe that all that is to come and has come are dictated by the elves. The elves are rumored to be one of the best users of the bow and arrow but many have no doubt that they are at least equal in skill to the fae. </string>
+    <string name="faeDescription">Humans call them fairies while most non human races call then the fae. They are a strong existence and one of the many longspan races whose ages can reach millenias. They are attuned to the flow of magic and are often hidden from view unless chosen otherwise. Their skill in the bow are legendary as well as their knowledge of magic.</string>
+    <string name="dwarfDescription">The dwarves were once masters of metal and Lords of the underworld. They share their underworld provinces with the goblins. Before the strife,they were known to share their technology with any race who came upon them but today they can hardy be found above ground. While they were rumored to be wiped from existence, recent sightings from goblin merchants say otherwise. They are brutal with the axe and are known to carry handheld cannons which only they can wield due to its tremendous firepower.</string>
+    <string name="demonDescription">The early days of the demons were days of darkness. They were lost elementals of darkness which transcended on the plane of reality to wreak havoc. But after aeons of exposure on the mortal plane, they have learned to live in peace with its inhabitants. As the strife took place, many of them reverted to their primal form, while some remain to be in contact with the lesser races such as humans and dwarves. They are strong wielders of magic and are able to phase in-between realities, though those with the ability are now all but myth.</string>
+
+    <string name="strengthDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nStrength is good.</string>
+    <string name="agilityDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nAgility is fast.</string>
+    <string name="dexterityDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nDex is accurate.</string>
+    <string name="wisdomDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nWisdom is smarts.</string>
+    <string name="charismaDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nCharisma is attractive.</string>
+    <string name="constitutionDescription">TEMP DESCRIPTION TILL NICK WRITES THIS SHIT.\nConstitution is principles.</string>
+    <string name="attributePointsTooLow">You have inputted less than 10 points, continuing with these attributes will be more challenging than it was designed. Are you sure?</string>
+    <string name="attributeError">Please input ONLY 10 points into the attributes.</string>
+    <string name="attributeConfirm">Confirm Attributes?\nThese initial 10 points cannot be changed after this.</string>
+    
+    <string name="loreText">Year 174, Year of the Fae (Old Calendar)\n
+
+An age of darkness looms over the kingdom of Bandolia, once a kingdom that spanned 400 leagues across the known world. Humans, elves, dwarves, demons, fae, and goblins were all part of a unified society, one whereby they had achieved great renown.\n\n
+
+However, as do all great empires, every Golden Age has it’s day, and that day came in the form of fire, astral forces and celestial beings. They were called Three Of Six, a celestial being part of the Great Order, which comes down to the mundane plane to create anomalies, in the bid to create a unique reality, often times with catastrophic results.\n\n
+
+The year that followed was one of great mystery and peril, fire rained down from the heavens razing the fields that the humans sow, trapping the dwarves in the mines they work, awakening demons that forgot their primal forms, and dividing the fae and the goblins from the rest of the realm. It was the beginning of the Strife which will change the Kingdom of Bandolia over the following millennia.\n\n
+
+
+
+Year 3156, Year of Grottgart the Miserable ( Grott’s 32nd Calendar of His Making)\n
+
+The unity of the Bandolian kingdoms are now part of a forgotten legend, now there are splintered factions with each race either forming clans, or guilds on a now mostly scarce wasteland.\n\nFor a millennia, new life can hardly be grown or nurtured, the dwarves were never seen again after the events of The Strife, and the elves kept to themselves, coming out from dead forests only to vanish curious wanderers or the occasional journeyman.\n\n War has loomed over the past decade over the remaining territories untouched by the Strife. Your story now begins in one of these regions called Dwendil. Largely untouched due to its uncommon attraction of the darker parts of society, yet it prospers from a corrupted hierarchy from old nobels and ragtag warlords, they are unified by need, but rivaled in greed. A whisper within the region of Dwendil has stirred many an adventurer as tales have been woven about an old artifact which was left by the celestial called the Tempest Dawn whose power was said to be able to bring peace back to the realm.\n\n</string>
+</resources>
