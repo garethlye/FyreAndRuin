@@ -7,15 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import com.example.garethlye.fyreandruination.databinding.ActivityMainMenuBinding;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import gifPlayer.GifImageView;
 import music.AudioPlayer;
 
 public class MainMenu extends AppCompatActivity {
+
+    @Bind(R.id.backgroundGifView)
+    GifImageView backgroundGifView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainMenuBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main_menu);
         binding.setViewModel(MainMenu.this);
+        ButterKnife.bind(this);
+        backgroundGifView.setGifImageResource(R.drawable.mainmenu_background_large);
         startAudio();
     }
 
