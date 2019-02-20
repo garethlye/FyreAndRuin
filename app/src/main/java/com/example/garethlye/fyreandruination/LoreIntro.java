@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.example.garethlye.fyreandruination.databinding.ActivityLoreIntroBinding;
 
+import music.AudioPlayer;
+
 public class LoreIntro extends AppCompatActivity {
 
     @Override
@@ -20,5 +22,12 @@ public class LoreIntro extends AppCompatActivity {
     public void onContinueClicked(final View view){
         Intent startLore = new Intent(LoreIntro.this, Character_Creation_1.class);
         startActivity(startLore);
+    }
+
+    @Override
+    public void onDestroy(){
+        Intent objIntent = new Intent(LoreIntro.this, AudioPlayer.class);
+        stopService(objIntent);
+        super.onDestroy();
     }
 }

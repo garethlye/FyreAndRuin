@@ -254,13 +254,17 @@
         android:id="@+id/attributeDescription"
         android:background="#3f3f3f"/>
 
-    <Button
-        android:text="@string/confirmBtn"
+    <TextView
+        android:id="@+id/characterCreation3ContinueBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/attributeDescription"
+        android:padding="13dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/characterCreation3ContinueBtn"/>
+        android:layout_below="@+id/attributeDescription"
+        android:text="@string/confirmBtn"/>
 
 </RelativeLayout>
 </layout>

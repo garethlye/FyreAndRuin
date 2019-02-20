@@ -19,7 +19,7 @@ public class AudioPlayer extends Service {
 
     public void onCreate() {
         super.onCreate();
-        objPlayer = MediaPlayer.create(this, R.raw.everything_stays);
+        objPlayer = MediaPlayer.create(this, R.raw.widows_peak_odetta_hartman);
     }
 
     public int onStartCommand(Intent intent, int flags, int startId){

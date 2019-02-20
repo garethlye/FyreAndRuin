@@ -16,25 +16,26 @@ import android.widget.TextView;
 
 import com.example.garethlye.fyreandruination.databinding.ActivityCharacterCreation2Binding;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import music.AudioPlayer;
 
 
 public class Character_Creation_2 extends AppCompatActivity {
 
-    @Bind(R.id.classesSpinner)
+    @BindView(R.id.classesSpinner)
     Spinner classSpinner;
 
-    @Bind(R.id.racesSpinner)
+    @BindView(R.id.racesSpinner)
     Spinner raceSpinner;
 
-    @Bind(R.id.sexSpinner)
+    @BindView(R.id.sexSpinner)
     Spinner sexSpinner;
 
-    @Bind(R.id.classDescription)
+    @BindView(R.id.classDescription)
     TextView classTextView;
 
-    @Bind(R.id.raceDescription)
+    @BindView(R.id.raceDescription)
     TextView raceTextView;
 
     private ObservableField<String> classDescription = new ObservableField<>();
@@ -190,5 +191,12 @@ public class Character_Creation_2 extends AppCompatActivity {
 
     public ObservableField<String> getRaceDescription() {
         return raceDescription;
+    }
+
+    @Override
+    public void onDestroy(){
+        Intent objIntent = new Intent(Character_Creation_2.this, AudioPlayer.class);
+        stopService(objIntent);
+        super.onDestroy();
     }
 }

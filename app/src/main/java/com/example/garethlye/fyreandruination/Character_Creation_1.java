@@ -4,20 +4,20 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
 import com.example.garethlye.fyreandruination.databinding.ActivityCharacterCreation1Binding;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import music.AudioPlayer;
 
 public class Character_Creation_1 extends AppCompatActivity {
 
-    @Bind(R.id.adventurerNameEditText)
+    @BindView(R.id.adventurerNameEditText)
     EditText mEditText;
 
     @Override
@@ -47,6 +47,19 @@ public class Character_Creation_1 extends AppCompatActivity {
         });
 
         dlgAlert.show();
+    }
 
+    @Override
+    public void onDestroy(){
+        Intent objIntent = new Intent(Character_Creation_1.this, AudioPlayer.class);
+        stopService(objIntent);
+        super.onDestroy();
+    }
+
+    @Override
+    public void onPause() {
+        Intent objIntent = new Intent(Character_Creation_1.this, AudioPlayer.class);
+        stopService(objIntent);
+        super.onPause();
     }
 }

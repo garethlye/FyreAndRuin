@@ -22,7 +22,7 @@ public class MusicPlayer extends Service {
     }
     public void onCreate()
     {
-        mp = MediaPlayer.create(this, R.raw.everything_stays);
+        mp = MediaPlayer.create(this, R.raw.widows_peak_odetta_hartman);
         mp.setLooping(false);
     }
     public void onDestroy()

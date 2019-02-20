@@ -13,7 +13,7 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="10dp"
-    android:background="#663300">
+    android:background="@drawable/vintage_textured_paper_background">
 
     <LinearLayout
         android:id="@+id/loreLinearLayout"
@@ -23,11 +23,15 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/continueBtn"
-            android:onClick="@{viewModel::onContinueClicked}"/>
+            android:onClick="@{viewModel::onContinueClicked}"
+            android:padding="13dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:text="@string/continueBtn"/>
     </LinearLayout>
 
     <ScrollView
@@ -45,6 +49,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/loreText"
                 android:textSize="20sp"
+                android:padding="8dp"
+                android:textColor="#000000"
                 android:textStyle="italic"/>
         </LinearLayout>
     </ScrollView>

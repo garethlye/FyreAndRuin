@@ -7,29 +7,36 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:screenOrientation="portrait">
         <service
             android:name="music.AudioPlayer"
             android:enabled="true"/>
 
         <activity
             android:name=".MainMenu"
-            android:hardwareAccelerated="false">
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SplashDisplay">
+        <activity android:name=".SplashDisplay"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LoreIntro">
+        <activity android:name=".LoreIntro"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Character_Creation_1">
+        <activity android:name=".Character_Creation_1"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Character_Creation_2">
+        <activity android:name=".Character_Creation_2"
+                  android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Character_Creation_3">
+        <activity android:name=".Character_Creation_3"
+                  android:screenOrientation="portrait">
         </activity>
 
     </application>

@@ -1,6 +1,7 @@
 package com.example.garethlye.fyreandruination;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableField;
 import android.graphics.Color;
@@ -14,76 +15,77 @@ import android.widget.TextView;
 
 import com.example.garethlye.fyreandruination.databinding.ActivityCharacterCreation3Binding;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
+import music.AudioPlayer;
 
 public class Character_Creation_3 extends AppCompatActivity {
 
-    @Bind(R.id.strengthSeekBar)
+    @BindView(R.id.strengthSeekBar)
     SeekBar strSB;
 
-    @Bind(R.id.agilitySeekBar)
+    @BindView(R.id.agilitySeekBar)
     SeekBar agiSB;
 
-    @Bind(R.id.dexteritySeekBar)
+    @BindView(R.id.dexteritySeekBar)
     SeekBar dexSB;
 
-    @Bind(R.id.wisdomSeekBar)
+    @BindView(R.id.wisdomSeekBar)
     SeekBar wisSB;
 
-    @Bind(R.id.charismaSeekBar)
+    @BindView(R.id.charismaSeekBar)
     SeekBar chaSB;
 
-    @Bind(R.id.constitutionSeekBar)
+    @BindView(R.id.constitutionSeekBar)
     SeekBar consSB;
 
-    @Bind(R.id.strengthValue)
+    @BindView(R.id.strengthValue)
     TextView strengthValue;
 
-    @Bind(R.id.agilityValue)
+    @BindView(R.id.agilityValue)
     TextView agilityValue;
 
-    @Bind(R.id.dexterityValue)
+    @BindView(R.id.dexterityValue)
     TextView dexterityValue;
 
-    @Bind(R.id.wisdomValue)
+    @BindView(R.id.wisdomValue)
     TextView wisdomValue;
 
-    @Bind(R.id.charismaValue)
+    @BindView(R.id.charismaValue)
     TextView charismaValue;
 
-    @Bind(R.id.constitutionValue)
+    @BindView(R.id.constitutionValue)
     TextView constitutionValue;
 
-    @Bind(R.id.totalValueTextView)
+    @BindView(R.id.totalValueTextView)
     TextView totalValueTextView;
 
-    @Bind(R.id.maxValueReachedTextView)
+    @BindView(R.id.maxValueReachedTextView)
     TextView maxValueReachedTextView;
 
-    @Bind(R.id.attributeDescription)
+    @BindView(R.id.attributeDescription)
     TextView attributeDescriptionText;
 
-    @Bind(R.id.strengthText)
+    @BindView(R.id.strengthText)
     TextView strengthText;
 
-    @Bind(R.id.agilityText)
+    @BindView(R.id.agilityText)
     TextView agilityText;
 
-    @Bind(R.id.dexterityText)
+    @BindView(R.id.dexterityText)
     TextView dexterityText;
 
-    @Bind(R.id.wisdomText)
+    @BindView(R.id.wisdomText)
     TextView wisdomText;
 
-    @Bind(R.id.charismaText)
+    @BindView(R.id.charismaText)
     TextView charismaText;
 
-    @Bind(R.id.constitutionText)
+    @BindView(R.id.constitutionText)
     TextView constitutionText;
 
-    @Bind(R.id.characterCreation3ContinueBtn)
-    Button continueButton;
+    @BindView(R.id.characterCreation3ContinueBtn)
+    TextView continueButton;
 
     private ObservableField<String> totalValue = new ObservableField<>();
     private int                     str        = 0, agi = 0, dex = 0, wis = 0, cha = 0, cons = 0;
@@ -317,6 +319,13 @@ public class Character_Creation_3 extends AppCompatActivity {
 
     public ObservableField<String> getTotalValue() {
         return totalValue;
+    }
+
+    @Override
+    public void onDestroy(){
+        Intent objIntent = new Intent(Character_Creation_3.this, AudioPlayer.class);
+        stopService(objIntent);
+        super.onDestroy();
     }
 
 }

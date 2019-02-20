@@ -53,12 +53,15 @@
                 android:paddingTop="10dp"
                 android:textColor="#000000"/>
 
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/character_creation_name_editText"
-                android:text="@string/confirmBtn"
-                android:onClick="@{viewModel::onConfirmBtnClicked}"/>
+                android:onClick="@{viewModel::onConfirmBtnClicked}"
+                android:padding="13dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:text="@string/confirmBtn"/>
         </LinearLayout>
 
     </RelativeLayout>

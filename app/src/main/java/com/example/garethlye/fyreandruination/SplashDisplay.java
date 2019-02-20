@@ -20,7 +20,7 @@ public class SplashDisplay extends AppCompatActivity {
         Thread timer = new Thread() {
             public void run() {
                 try {
-                    sleep(500);
+                    sleep(1000);
                 } catch (InterruptedException e) {
                     // TODO: handle exception
                     e.printStackTrace();
